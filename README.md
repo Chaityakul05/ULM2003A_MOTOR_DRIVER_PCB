@@ -1,6 +1,6 @@
 ## ULN2003A Test with ESP and Stepper Motor
 
-This project tests the ULN2003A Darlington transistor array using an ESP32/ESP8266 and a simple LED circuit. The setup demonstrates how the ULN2003A sinks current through its outputs when the corresponding input is triggered by a GPIO pin from the ESP. An LED connected between a 5V supply and OUT1 lights up when IN1 is driven HIGH, verifying proper operation of the IC. This test helps in understanding how to interface the ULN2003A with microcontrollers to control loads like LEDs, motors, or relays.
+This project demonstrates how to drive a 28BYJ-48 stepper motor using the ULN2003A Darlington transistor array with an ESP32 or ESP8266. The ULN2003A is used as a current amplifier and switch to control the stepper motor, which requires more current than the ESP GPIO pins can provide directly. The setup connects the ESP to the four input pins (IN1–IN4) of the ULN2003A, which in turn controls the stepper motor connected to the output pins (OUT1–OUT4). This project helps in understanding how to interface stepper motors with microcontrollers through a driver IC and provides basic motion control using the Arduino Stepper library.
 
 ---
 
